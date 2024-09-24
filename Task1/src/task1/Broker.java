@@ -1,7 +1,18 @@
 package task1;
 
-public abstract class Broker {
-	public Broker(String name) {}
-	public abstract Channel accept(int port);
-	public abstract Channel connect(String name, int port);
+public class Broker {
+	String name;
+	BrokerRegistry registry;
+	
+	public Broker(String name) {
+		this.name = name;
+	}
+	
+	public Channel accept(int port) {
+		return null;
+	}
+	
+	public Channel connect(String name, int port) {
+		return null;
+	}
 }
